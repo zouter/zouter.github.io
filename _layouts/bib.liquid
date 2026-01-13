@@ -48,7 +48,7 @@
 
   <!-- COLUMN 2: MAIN TEXT & HIDDEN CONTENT -->
   <!-- Adjusted width: col-sm-8 (if image) or col-sm-9 (if no image) -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-9{% else %}col-sm-12{% endif %}">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -225,7 +225,7 @@
   </div>
 
   <!-- COLUMN 3: BUTTONS & LINKS -->
-  <div class="col-sm-2 abbr">
+  <div class="col-sm-6 abbr">
     <div class="links">
       {% if entry.award %}
         <a class="award btn btn-sm z-depth-0" role="button">
@@ -406,6 +406,7 @@
     {% endif %}
   </div>
 </div>
+<hr>
 
 
 <!-- JAVASCRIPT FIX FOR 3-COLUMN LAYOUT -->
