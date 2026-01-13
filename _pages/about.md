@@ -7,7 +7,7 @@ subtitle: <a href='https://www.ugent.be/en'>Assistant Professor, Ghent Universit
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
 
 logo:
   align: right
@@ -23,9 +23,9 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 ---
 
-Our lab uses advanced probabilistic AI models to solve complex immunological puzzles.
+My lab uses advanced probabilistic AI models to solve complex immunological puzzles.
 
-We focus on establishing **causal**{: style="color:#EC6524"} links between genes and cell states. We apply key concepts from causal learning to go beyond correlations.
+We focus on establishing **causal**{: style="color:#EC6524"} links between genes and cell states. We apply key concepts from causal learning to go beyond correlations, and use large-scale perturbational data where possible.
 
 For this we use a **systems**{: style="color:#04A2A7"} perspective. Modern perturbational datasets give unique problems for inference and statistics, meaning we push the frontier of deep probabilistic models and amortization. A true dream for any aspiring machine learner.
 

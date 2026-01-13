@@ -278,7 +278,7 @@
   </div>
 
   <!-- COLUMN 3: BUTTONS & LINKS -->
-  <div class="col-sm-6 abbr">
+  <div class="col-sm-8 abbr">
     <div class="links">
       {% if entry.award %}
         <a class="award btn btn-sm z-depth-0" role="button">
@@ -335,6 +335,13 @@
       {% if entry.portal %}
         <a href="{{ entry.portal }}" class="btn z-depth-0" role="button" style="font-size: 1rem;">🌐 Portal</a>
       {% endif %}
+      {% if entry.data %}
+        <a href="{{ entry.data }}" class="btn z-depth-0" role="button" style="font-size: 1rem;">📊 Data</a>
+      {% endif %}
+      {% if entry.preprint %}
+        <a href="{{ entry.preprint }}" class="btn z-depth-0" role="button" style="font-size: 1rem;">📝 Preprint</a>
+      {% endif %}
+
       {% if entry.poster %}
         {% if entry.poster contains '://' %}
           <a href="{{ entry.poster }}" class="btn z-depth-0" role="button">Poster</a>
