@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Assistant Professor, Ghent University<br>Expert Scientist, Center for Inflammation Research, VIB</a>.
+subtitle: <a href='https://www.ugent.be/en'>Assistant Professor, Ghent University</a><br><a href='https://www.vib.be'>Expert Scientist, Center for Inflammation Research, VIB</a>.
 
 profile:
   align: right
