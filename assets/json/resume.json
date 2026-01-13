@@ -11,45 +11,46 @@
       "address": "Technologiepark-Zwijnaarde 52",
       "postalCode": "9052",
       "city": "Gent",
-      "countryCode": "BE",
+      "countryCode": "BE"
     },
     "profiles": [
     ]
   },
   "work": [
     {
-      "name": "Center for Inflammation Research",
+      "name": "VIB Center for Inflammation Research",
       "position": "Expert Scientist",
-      "url": "https://example.com",
+      "url": "https://vib.be",
       "startDate": "2026-01-01",
       "endDate": "",
       "summary": "",
-      "highlights": [""]
+      "highlights": []
+    },
+    {
+      "name": "Ghent University",
+      "position": "Assistant Professor",
+      "url": "https://ugent.be",
+      "startDate": "2025-02-01",
+      "endDate": "",
+      "summary": "",
+      "highlights": []
     }
   ],
   "volunteer": [
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
+      "institution": "Ghent University",
+      "location": "Ghent, Belgium",
       "url": "https://www.uzh.ch/",
-      "area": "Software Development",
+      "area": "Bio-informatics",
       "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "startDate": "2014-09-01",
+      "endDate": "2019-11-14",
+      "courses": []
     }
   ],
   "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
   ],
   "certificates": [
   ],

@@ -11,18 +11,18 @@ profiles:
   # and create one content file for each profile inside _pages/
   - align: right
     image: prof_pic.jpg
-    content: about/about_wouter.md
+    content: about/wouters.md
     image_circular: false
   - align: right
     image: prof_pic.jpg
-    content: about/about_robin.md
+    content: about/robinve.md
     image_circular: false
   - align: right
     image: prof_pic.jpg
-    content: about/about_michiel.md
+    content: about/michielv.md
     image_circular: false
   - align: right
     image: prof_pic.jpg
-    content: about/about_maxim.md
+    content: about/maximva.md
     image_circular: false
 ---
