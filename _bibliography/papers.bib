@@ -20,8 +20,10 @@
   keywords = {Bioinformatics,High-throughput screening,RNA sequencing,Stem cells,Transcriptomics},
   file = {C:\Users\wouters\Zotero\storage\IP254XGI\Liu et al. - 2025 - Dissecting the impact of transcription factor dose on cell reprogramming heterogeneity using scTF-se.pdf},
   selected={true},
-  dimensions={true},
-  annotation={* contributed equally}
+  annotation={* contributed equally},
+  code={https://github.com/DeplanckeLab/TF-seq},
+  comment = {A high-throughput technology to study the effect of transcription factor dose},
+  preview = {tfseq.png}
 }
 
 @article{cannoodt*FunkyheatmapVisualisingData2025,
@@ -41,9 +43,38 @@
   langid = {english},
   file = {C:\Users\wouters\Zotero\storage\MYACGPL8\Cannoodt et al. - 2025 - funkyheatmap Visualising data frames with mixed data types.pdf},
   selected={true},
-  dimensions={true},
-  annotation={† contributed equally}
+  annotation={† contributed equally},
+  code = {https://github.com/funkyheatmap/funkyheatmap},
+  comment = {A clean and easy way to make complex heatmaps in Python, R and Javascript},
+  preview = {funkyheatmap.png},
+  tool = {https://pypi.org/project/funkyheatmappy/}
 }
+
+@article{saelensChromatinHDConnectsSinglecell2025a,
+  title = {{{ChromatinHD}} Connects Single-Cell {{DNA}} Accessibility and Conformation to Gene Expression through Scale-Adaptive Machine Learning},
+  author = {Saelens, Wouter and Pushkarev, Olga and Deplancke, Bart},
+  year = 2025,
+  month = jan,
+  journal = {Nature Communications},
+  volume = {16},
+  number = {1},
+  pages = {317},
+  publisher = {Nature Publishing Group},
+  issn = {2041-1723},
+  doi = {10.1038/s41467-024-55447-9},
+  urldate = {2026-01-13},
+  abstract = {Gene regulation is inherently multiscale, but scale-adaptive machine learning methods that fully exploit this property in single-nucleus accessibility data are still lacking. Here, we develop ChromatinHD, a pair of scale-adaptive models that uses the raw accessibility data, without peak-calling or windows, to link regions to gene expression and determine differentially accessible chromatin. We show how ChromatinHD consistently outperforms existing peak and window-based approaches and find that this is due to a large number of uniquely captured, functional accessibility changes within and outside of putative cis-regulatory regions. Furthermore, ChromatinHD can delineate collaborating regulatory regions, including their preferential genomic conformations, that drive gene expression. Finally, our models also use changes in ATAC-seq fragment lengths to identify dense binding of transcription factors, a feature not captured by footprinting methods. Altogether, ChromatinHD, available at https://chromatinhd.org, is a suite of computational tools that enables a data-driven understanding of chromatin accessibility at various scales and how it relates to gene expression.},
+  copyright = {2024 The Author(s)},
+  langid = {english},
+  keywords = {Chromatin remodelling,Computational models,Regulatory networks,Statistical methods},
+  file = {C:\Users\wouters\Zotero\storage\ZEYEWCPN\Saelens et al. - 2025 - ChromatinHD connects single-cell DNA accessibility and conformation to gene expression through scale.pdf},
+  selected={true},
+  comment = {A scale-adaptive machine learning method to link single-cell chromatin accessibility to gene expression},
+  code = {https://github.com/DeplanckeLab/ChromatinHD_manuscript},
+  preview = {chromatinhd.png},
+  tool = {https://chromatinhd.org},
+}
+
 
 
 
@@ -65,9 +96,39 @@
   keywords = {across species,atlas,CITE-seq,Kupffer cell,lipid-associated macrophage,liver,multi-omic,NAFLD,proteogenomic,spatial transcriptomics},
   file = {C:\Users\wouters\Zotero\storage\5PHTHX7E\Guilliams et al. - 2022 - Spatial proteogenomics reveals distinct and evolut.pdf},
   selected={true},
-  dimensions={true},
+  annotation={* co-supervised the work},
+  comment = {One of the first comprehensive liver cell atlases combining single-cell and spatial transcriptomics with proteomics},
+  preview = {liveratlas.png},
+  portal = {https://www.livercellatlas.org/},
+  pdf = {https://biblio.ugent.be/publication/8738275/file/8738278.pdf}
+}
+
+@article{cannoodtSpearheadingFutureOmics2021,
+  title = {Spearheading Future Omics Analyses Using Dyngen, a Multi-Modal Simulator of Single Cells},
+  author = {Cannoodt*, Robrecht and Saelens*, Wouter and Deconinck, Louise and Saeys, Yvan},
+  year = 2021,
+  month = jun,
+  journal = {Nature Communications},
+  volume = {12},
+  number = {1},
+  pages = {3942},
+  publisher = {Nature Publishing Group},
+  issn = {2041-1723},
+  doi = {10.1038/s41467-021-24152-2},
+  urldate = {2025-09-26},
+  abstract = {We present dyngen, a multi-modal simulation engine for studying dynamic cellular processes at single-cell resolution. dyngen is more flexible than current single-cell simulation engines, and allows better method development and benchmarking, thereby stimulating development and testing of computational methods. We demonstrate its potential for spearheading computational methods on three applications: aligning cell developmental trajectories, cell-specific regulatory network inference and estimation of RNA velocity.},
+  copyright = {2021 The Author(s)},
+  langid = {english},
+  keywords = {Computational models,Gene regulatory networks,Machine learning,Quality control},
+  file = {C:\Users\wouters\Zotero\storage\EVXWVC24\Cannoodt et al. - 2021 - Spearheading future omics analyses using dyngen, a multi-modal simulator of single cells.pdf},
+  selected={true},
+  comment = {A flexible simulator for single-cell multi-omics data, useful for benchmarking computational methods},
+  code={https://github.com/dynverse/dyngen},
+  tool = {https://github.com/dynverse/dyngen},
+  preview = {dyngen.png},
   annotation={* contributed equally}
 }
+
 
 
 
@@ -91,8 +152,12 @@
   keywords = {Computational biology and bioinformatics,Gene expression analysis,Systems biology},
   file = {C:\Users\wouters\Zotero\storage\DDF92XIZ\Browaeys et al. - 2020 - NicheNet modeling intercellular communication by .pdf},
   selected={true},
-  dimensions={true},
-  annotation={† co-supervised the work}
+  annotation={† co-supervised the work},
+  code={https://github.com/saeyslab/nichenetr},
+  comment = {A widely used method to predict cell-cell communication from single-cell data by not only looking at ligand-receptor pairs but also modeling downstream target gene regulation},
+  preview = {nichenet.png},
+  tool = {https://github.com/saeyslab/nichenetr},
+  pdf = {https://drive.google.com/file/u/0/d/1YoMkqJ4ftaHXJjz83yzosx72XYgpfMVG/view}
 }
 
 
@@ -114,8 +179,36 @@
   langid = {english},
   keywords = {Computer modelling,Developmental biology,Differentiation,Software,Time series},
   file = {C:\Users\wouters\Zotero\storage\YJY559VS\Saelens et al. - 2019 - A comparison of single-cell trajectory inference m.pdf},
-  dimensions = {true},
   annotation={* contributed equally},
   selected={true},
+  comment = {The reference benchmark paper for single-cell trajectory inference methods},
+  code={https://github.com/dynverse/dynbenchmark},
+  preview = {dynbenchmark.png},
+  tool = {https://github.com/dynverse/dyno},
+  pdf = {https://drive.google.com/file/u/0/d/10MXw4uzI7a-aCfp8GlWCgi97ocfork4Y/view}
+
 }
 
+@article{saelensComprehensiveEvaluationModule2018,
+  title = {A Comprehensive Evaluation of Module Detection Methods for Gene Expression Data},
+  author = {Saelens, Wouter and Cannoodt, Robrecht and Saeys, Yvan},
+  year = 2018,
+  month = mar,
+  journal = {Nature Communications},
+  volume = {9},
+  number = {1},
+  pages = {1090},
+  publisher = {Nature Publishing Group},
+  issn = {2041-1723},
+  doi = {10.1038/s41467-018-03424-4},
+  urldate = {2024-10-06},
+  abstract = {A critical step in the analysis of large genome-wide gene expression datasets is the use of module detection methods to group genes into co-expression modules. Because of limitations of classical clustering methods, numerous alternative module detection methods have been proposed, which improve upon clustering by handling co-expression in only a subset of samples, modelling the regulatory network, and/or allowing overlap between modules. In this study we use known regulatory networks to do a comprehensive and robust evaluation of these different methods. Overall, decomposition methods outperform all other strategies, while we do not find a clear advantage of biclustering and network inference-based approaches on large gene expression datasets. Using our evaluation workflow, we also investigate several practical aspects of module detection, such as parameter estimation and the use of alternative similarity measures, and conclude with recommendations for the further development of these methods.},
+  copyright = {2018 The Author(s)},
+  langid = {english},
+  keywords = {Data mining,Gene regulatory networks},
+  file = {C:\Users\wouters\Zotero\storage\544WK6VM\Saelens et al. - 2018 - A comprehensive evaluation of module detection met.pdf},
+  selected={true},
+  comment = {A benchmark of gene module detection methods},
+  code={https://github.com/saeyslab/moduledetection-evaluation},
+  preview = {module.png}
+}

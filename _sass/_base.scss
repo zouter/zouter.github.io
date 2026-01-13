@@ -220,7 +220,7 @@ ul.task-list input[type="checkbox"] {
 
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    width: 20%;
 
     .address {
       p {
@@ -874,6 +874,15 @@ footer.sticky-bottom {
         transition: all 0.15s ease;
       }
 
+      div.abstract {
+        opacity: 0.9;
+        // make it italic
+        font-style: italic;
+        background-color: var(--global-abstract-bg-color);
+        margin-top: 0.5rem;
+        
+      }
+
       div.abstract.hidden {
         border: dashed 1px var(--global-bg-color);
       }
@@ -1496,4 +1505,10 @@ figure.cover {
 
 mjx-container[jax="CHTML"][display="true"] {
   overflow-x: auto;
+}
+
+
+
+ol.bibliography > li:hover {
+  background-color: var(--global-subtle-hover-color);
 }

@@ -1,8 +1,9 @@
 ---
 ---
 <div class="row">
+  <!-- COLUMN 1: IMAGE -->
   {% if site.enable_publication_thumbnails %}
-    <div class="col col-sm-2 abbr">
+    <div class="col-sm-2 abbr">
       {%- if entry.abbr -%}
         {%- if site.data.venues[entry.abbr] -%}
           {% assign venue_style = null %}
@@ -27,7 +28,7 @@
       {% endif %}
       {% if entry.preview %}
         {% if entry.preview contains '://' %}
-          <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
+          <img class="" src="{{ entry.preview }}">
         {% else %}
           {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
           {%
@@ -35,7 +36,7 @@
             loading="eager"
             path=entry_path
             sizes = "200px"
-            class="preview z-depth-1 rounded"
+            class=""
             zoomable=true
             avoid_scaling=true
             alt=entry.preview
@@ -45,7 +46,8 @@
     </div>
   {% endif %}
 
-  <!-- Entry bib key -->
+  <!-- COLUMN 2: MAIN TEXT & HIDDEN CONTENT -->
+  <!-- Adjusted width: col-sm-8 (if image) or col-sm-9 (if no image) -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
@@ -187,78 +189,119 @@
       {{ entry.note | strip }}
     </div>
 
-    <!-- Links/Buttons -->
+    {% if entry.comment %}
+      <div class="abstract">
+        <p>{{ entry.comment }}</p>
+      </div>
+    {% endif %}
+
+    <!-- HIDDEN CONTENT BLOCKS (Abstract, Bibtex, Awards) -->
+    <!-- Keeping these here allows them to expand to full width under the text -->
+    {% if entry.award %}
+      <div class="award hidden d-print-inline">
+        <p>{{ entry.award | markdownify }}</p>
+      </div>
+    {% endif %}
+
+    {% if entry.abstract %}
+      <div class="abstract hidden">
+        <p>{{ entry.abstract }}</p>
+      </div>
+    {% endif %}
+
+    {% if entry.bibtex_show %}
+      <div class="bibtex hidden">
+        {% highlight bibtex %}
+        {{- entry.bibtex | hideCustomBibtex -}}
+        {% endhighlight %}
+      </div>
+    {% endif %}
+
+    {% if entry.video and site.enable_video_embedding %}
+      <div class="abstract hidden">
+        <div style="text-align: center;">{% include video.liquid path=entry.video class="img-fluid rounded z-depth-1" controls=true %}</div>
+      </div>
+    {% endif %}
+  </div>
+
+  <!-- COLUMN 3: BUTTONS & LINKS -->
+  <div class="col-sm-2 abbr">
     <div class="links">
       {% if entry.award %}
         <a class="award btn btn-sm z-depth-0" role="button">
           {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
         </a>
       {% endif %}
-      {% if entry.abstract %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-      {% endif %}
       {% if entry.doi %}
-        <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
+        <a href="https://doi.org/{{ entry.doi }}" class="btn z-depth-0" role="button" style="font-size: 1rem;">📰 DOI</a>
       {% endif %}
       {% if entry.arxiv %}
-        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn z-depth-0" role="button">arXiv</a>
       {% endif %}
       {% if entry.hal %}
-        <a href="https://hal.science/{{ entry.hal }}" class="btn btn-sm z-depth-0" role="button">HAL</a>
+        <a href="https://hal.science/{{ entry.hal }}" class="btn z-depth-0" role="button">HAL</a>
       {% endif %}
       {% if entry.bibtex_show %}
-        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+        <a class="bibtex btn z-depth-0" role="button">Bib</a>
       {% endif %}
       {% if entry.html %}
         {% if entry.html contains '://' %}
-          <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
+          <a href="{{ entry.html }}" class="btn z-depth-0" role="button">HTML</a>
         {% else %}
-          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
+          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn z-depth-0" role="button">HTML</a>
         {% endif %}
       {% endif %}
       {% if entry.pdf %}
         {% if entry.pdf contains '://' %}
-          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          <a href="{{ entry.pdf }}" class="btn z-depth-0" role="button" style="font-size: 1rem;">💾 PDF</a>
         {% else %}
-          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn z-depth-0" role="button">PDF</a>
         {% endif %}
       {% endif %}
       {% if entry.supp %}
         {% if entry.supp contains '://' %}
-          <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
+          <a href="{{ entry.supp }}" class="btn z-depth-0" role="button">Supp</a>
         {% else %}
-          <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
+          <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn z-depth-0" role="button">Supp</a>
         {% endif %}
       {% endif %}
       {% if entry.video and site.enable_video_embedding %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">Video</a>
+        <a class="abstract btn z-depth-0" role="button">Video</a>
       {% elsif entry.video %}
-        <a href="{{ entry.video }}" class="btn btn-sm z-depth-0" role="button">Video</a>
+        <a href="{{ entry.video }}" class="btn z-depth-0" role="button">Video</a>
       {% endif %}
       {% if entry.blog %}
-        <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
+        <a href="{{ entry.blog }}" class="btn z-depth-0" role="button">Blog</a>
       {% endif %}
       {% if entry.code %}
-        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
+        <a href="{{ entry.code }}" class="btn z-depth-0" role="button" style="font-size: 1rem;">👩‍💻 Code</a>
+      {% endif %}
+      {% if entry.tool %}
+        <a href="{{ entry.tool }}" class="btn z-depth-0" role="button" style="font-size: 1rem;">👨‍🔬 Tool</a>
+      {% endif %}
+      {% if entry.portal %}
+        <a href="{{ entry.portal }}" class="btn z-depth-0" role="button" style="font-size: 1rem;">🌐 Portal</a>
       {% endif %}
       {% if entry.poster %}
         {% if entry.poster contains '://' %}
-          <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
+          <a href="{{ entry.poster }}" class="btn z-depth-0" role="button">Poster</a>
         {% else %}
-          <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
+          <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn z-depth-0" role="button">Poster</a>
         {% endif %}
       {% endif %}
       {% if entry.slides %}
         {% if entry.slides contains '://' %}
-          <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
+          <a href="{{ entry.slides }}" class="btn z-depth-0" role="button">Slides</a>
         {% else %}
-          <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
+          <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn z-depth-0" role="button">Slides</a>
         {% endif %}
       {% endif %}
       {% if entry.website %}
-        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+        <a href="{{ entry.website }}" class="btn z-depth-0" role="button">Website</a>
       {% endif %}
     </div>
+
+    <!-- BADGES -->
     {% if site.enable_publication_badges %}
       {% assign entry_has_altmetric_badge = false %}
       {% if entry.altmetric and entry.altmetric != 'false' %}
@@ -361,35 +404,38 @@
         </div>
       {% endif %}
     {% endif %}
-
-    {% if entry.award %}
-      <!-- Hidden Award block -->
-      <div class="award hidden d-print-inline">
-        <p>{{ entry.award | markdownify }}</p>
-      </div>
-    {% endif %}
-
-    {% if entry.abstract %}
-      <!-- Hidden abstract block -->
-      <div class="abstract hidden">
-        <p>{{ entry.abstract }}</p>
-      </div>
-    {% endif %}
-
-    {% if entry.bibtex_show %}
-      <!-- Hidden bibtex block -->
-      <div class="bibtex hidden">
-        {% highlight bibtex %}
-        {{- entry.bibtex | hideCustomBibtex -}}
-        {% endhighlight %}
-      </div>
-    {% endif %}
-
-    {% if entry.video and site.enable_video_embedding %}
-      <!-- Hidden video block -->
-      <div class="abstract hidden">
-        <div style="text-align: center;">{% include video.liquid path=entry.video class="img-fluid rounded z-depth-1" controls=true %}</div>
-      </div>
-    {% endif %}
   </div>
 </div>
+
+
+<!-- JAVASCRIPT FIX FOR 3-COLUMN LAYOUT -->
+<script>
+  // This script patches the Abstract/Bibtex open buttons.
+  // Because the buttons are now in a different column (col-sm-3) than the content (col-sm-7),
+  // the default theme script cannot find the content. This helper script bridges that gap.
+  $(document).ready(function() {
+    // Select buttons that should trigger hidden content
+    $(".links a.abstract, .links a.bibtex, .links a.award").click(function() {
+        // 1. Find the parent row that contains everything
+        var $row = $(this).closest('.row');
+        
+        // 2. Identify which type of content to open based on the button class
+        var type = "abstract";
+        if ($(this).hasClass("bibtex")) { type = "bibtex"; }
+        if ($(this).hasClass("award")) { type = "award"; }
+        
+        // 3. Find the hidden div in the sibling column (main-content-col)
+        var $target = $row.find("div." + type + ".hidden");
+        
+        // 4. Toggle the 'open' class
+        if ($target.length > 0) {
+            $target.toggleClass('open');
+            
+            // 5. Trigger Masonry layout update if the theme uses it
+            if(typeof $grid !== 'undefined') {
+                $grid.masonry('layout');
+            }
+        }
+    });
+  });
+</script>

@@ -1,7 +1,6 @@
 {
   "basics": {
     "name": "Wouter Saelens",
-    "label": "Scientist",
     "image": "",
     "email": "wouter.saelens@ugent.be",
     "phone": "",
@@ -34,6 +33,15 @@
       "endDate": "",
       "summary": "",
       "highlights": []
+    },
+    {
+      "name": "EPFL",
+      "position": "Postdoc",
+      "url": "https://epfl.ch",
+      "startDate": "2020-02-01",
+      "endDate": "2024-12-31",
+      "summary": "",
+      "highlights": []
     }
   ],
   "volunteer": [
@@ -63,6 +71,24 @@
   "interests": [
     {
       "name": "Artificial intelligence",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "Systems biology",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "Probabilistic modelling",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "Simulation-based inference",
       "icon": "fa-solid fa-tag",
       "keywords": [
       ]
