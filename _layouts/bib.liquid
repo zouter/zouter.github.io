@@ -1,5 +1,6 @@
 ---
 ---
+<a
 <div class="row">
   <!-- COLUMN 1: IMAGE -->
   {% if site.enable_publication_thumbnails %}
@@ -71,49 +72,41 @@
         {% assign is_truncated = true %}
       {% endif %}
 
-      {% comment %} --- HEAD LOOP: Show the first N authors --- {% endcomment %}
-      {%- for author in entry.author_array limit: limit_head -%}
-        {% assign author_is_self = false %}
-        {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
-        {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
-        {% if site.scholar.last_name contains author_last_name %}
-          {% if site.scholar.first_name contains author.first %}
-            {% assign author_is_self = true %}
-          {% endif %}
-        {%- endif -%}
-        {% assign coauthor_url = null %}
-        {%- assign clean_last_name = author_last_name | downcase | remove_accents -%}
-        {% if site.data.coauthors[clean_last_name] %}
-          {%- for coauthor in site.data.coauthors[clean_last_name] -%}
-            {% if coauthor.firstname contains author.first %}
-              {%- assign coauthor_url = coauthor.url -%}
-              {% break %}
-            {%- endif -%}
-          {% endfor %}
-        {%- endif -%}
-
-        {%- if author_is_self -%}
-          <em>{{- author.first }} {{ author_last_html -}}</em>
-        {%- else -%}
-          {%- if coauthor_url -%}
-            <a href="{{ coauthor_url }}">{{- author.first }} {{ author_last_html -}}</a>
-          {%- else -%}
-            {{- author.first }} {{ author_last_html -}}
-          {% endif %}
-        {%- endif -%}
-
-        {% if is_truncated %}
-            ,
-        {% else %}
-            {% if forloop.length > 1 %}
-                {% if forloop.last == false %}, {% endif %}
-            {% endif %}
-            {% if forloop.last and author_array_size == limit_head %}and {% endif %}
-        {% endif %}
-      {% endfor %}
-
-      {% comment %} --- MIDDLE & TAIL SECTION --- {% endcomment %}
+      {% comment %} Render differently for truncated vs non-truncated cases {% endcomment %}
       {% if is_truncated %}
+
+          {% comment %} --- HEAD LOOP: Show the first N authors --- {% endcomment %}
+          {%- for author in entry.author_array limit: limit_head -%}
+            {% assign author_is_self = false %}
+            {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+            {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
+            {% if site.scholar.last_name contains author_last_name %}
+              {% if site.scholar.first_name contains author.first %}
+                {% assign author_is_self = true %}
+              {% endif %}
+            {%- endif -%}
+            {% assign coauthor_url = null %}
+            {%- assign clean_last_name = author_last_name | downcase | remove_accents -%}
+            {% if site.data.coauthors[clean_last_name] %}
+              {%- for coauthor in site.data.coauthors[clean_last_name] -%}
+                {% if coauthor.firstname contains author.first %}
+                  {%- assign coauthor_url = coauthor.url -%}
+                  {% break %}
+                {%- endif -%}
+              {% endfor %}
+            {%- endif -%}
+
+            {%- if author_is_self -%}
+              <em>{{- author.first }} {{ author_last_html -}}</em>
+            {%- else -%}
+              {%- if coauthor_url -%}
+                <a href="{{ coauthor_url }}">{{- author.first }} {{ author_last_html -}}</a>
+              {%- else -%}
+                {{- author.first }} {{ author_last_html -}}
+              {% endif %}
+            {%- endif -%}
+            ,
+          {% endfor %}
           
           {% comment %} Calculate middle (hidden) count {% endcomment %}
           {%- assign more_authors = author_array_size | minus: limit_head | minus: cnt_last_authors -%}
@@ -148,7 +141,7 @@
                     if (++cursorPosition == more_authors_text.length){
                       clearInterval(textAdder);
                     }
-                }, '{{ site.more_authors_animation_delay }}');
+                }, '1');
               "
             >{{- more_authors_hide -}}</span>,
 
@@ -188,7 +181,42 @@
 
             {% unless forloop.last %}, {% endunless %}
           {% endfor %}
+      {% else %}
+          {% comment %} --- NON-TRUNCATED: Show all authors with proper punctuation --- {% endcomment %}
+          {%- for author in entry.author_array -%}
+            {% assign author_is_self = false %}
+            {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+            {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
+            {% if site.scholar.last_name contains author_last_name %}
+              {% if site.scholar.first_name contains author.first %}
+                {% assign author_is_self = true %}
+              {% endif %}
+            {%- endif -%}
+            {% assign coauthor_url = null %}
+            {%- assign clean_last_name = author_last_name | downcase | remove_accents -%}
+            {% if site.data.coauthors[clean_last_name] %}
+              {%- for coauthor in site.data.coauthors[clean_last_name] -%}
+                {% if coauthor.firstname contains author.first %}
+                  {%- assign coauthor_url = coauthor.url -%}
+                  {% break %}
+                {%- endif -%}
+              {% endfor %}
+            {%- endif -%}
 
+            {%- if author_is_self -%}
+              <em>{{- author.first }} {{ author_last_html -}}</em>
+            {%- else -%}
+              {%- if coauthor_url -%}
+                <a href="{{ coauthor_url }}">{{- author.first }} {{ author_last_html -}}</a>
+              {%- else -%}
+                {{- author.first }} {{ author_last_html -}}
+              {% endif %}
+            {%- endif -%}
+
+            {% unless forloop.last %}
+              {% if forloop.rindex == 2 %} and {% else %}, {% endif %}
+            {% endunless %}
+          {% endfor %}
       {% endif %}
 
       {% if entry.annotation %}
