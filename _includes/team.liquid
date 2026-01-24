@@ -4,7 +4,11 @@
     {% for profile in profiles %}
       {% assign photo_source = profile.image | default: 'placeholder.png' %}
       {% assign scheme_source = profile.scheme %}
-      <article class="team-card{% if profile.style %} team-card-{{ profile.style }}{% endif %}">
+      {% if profile.content %}
+        {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+        {% assign profile_content_html = profile_content | markdownify %}
+      {% endif %}
+      <article class="team-card{% if profile.style %} team-card-{{ profile.style }}{% endif %}"{% if profile.content %} data-content="{{ profile_content_html | escape }}" data-title="{{ profile.name | escape }}"{% if scheme_source %} data-scheme="{{ scheme_source | prepend: 'assets/img/profiles/schemes/' | relative_url }}"{% endif %}{% endif %}>
         <div class="team-images">
           {% if photo_source %}
             {% assign profile_image_path = photo_source | prepend: 'assets/img/profiles/photos/' %}
@@ -36,14 +40,21 @@
         {% if profile.more_info %}
           <div class="team-more">{{ profile.more_info }}</div>
         {% endif %}
-
-        {% if profile.content %}
-          <div class="team-body">
-            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-            {{ profile_content | markdownify }}
-          </div>
-        {% endif %}
       </article>
     {% endfor %}
   {% endif %}
 </div>
+
+<!-- Team Member Modal -->
+<div id="teamModal" class="team-modal">
+  <div id="teamModalOverlay" class="team-modal-overlay"></div>
+  <div class="team-modal-content">
+    <div class="team-modal-header">
+      <h2 id="teamModalTitle" class="team-modal-title"></h2>
+      <button id="teamModalClose" class="team-modal-close" aria-label="Close modal">&times;</button>
+    </div>
+    <div id="teamModalBody" class="team-modal-body"></div>
+  </div>
+</div>
+
+<script src="{{ '/assets/js/team-modal.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>

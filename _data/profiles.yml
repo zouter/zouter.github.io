@@ -5,19 +5,23 @@ simple:
     scheme: robinve.png
     comment: PhD
     style: cyanorange
+    content: about/robinve.md
   - name: Michien Ver Cruysse
     image: michielv.png.webp
     scheme: michielv.png
     comment: PhD
     style: purplecyan
+    content: about/michielv.md
   - name: Maxim Van Assel
     scheme: maximva.png
     comment: PhD
     style: purpleorange
+    content: about/maximva.md
   - name: Wouter Saelens
     image: wouters.jpg
     scheme: wouters.png
     style: purplecyanorange
+    content: about/wouters.md
   - name: Yujin Kim
     scheme: yujink.png
     comment: Graduate Student
@@ -30,22 +34,3 @@ simple:
     scheme: amire.png
     comment: PhD - Joining 2026
     style: purplecyan
-
-# Full profiles for profiles.md (team page)
-full:
-  - align: right
-    content: about/robinve.md
-    scheme: robinve.png
-    image_circular: false
-  - align: right
-    content: about/michielv.md
-    scheme: michielv.png
-    image_circular: false
-  - align: right
-    content: about/maximva.md
-    scheme: maximva.png
-    image_circular: false
-  - align: right
-    content: about/wouters.md
-    scheme: wouters.png
-    image_circular: false
