@@ -1,6 +1,7 @@
 <div class="team-grid">
-  {% if page.profiles %}
-    {% for profile in page.profiles %}
+  {% assign profiles = site.data.profiles[page.profile_source] %}
+  {% if profiles %}
+    {% for profile in profiles %}
       {% assign photo_source = profile.image | default: 'placeholder.png' %}
       {% assign scheme_source = profile.scheme %}
       <article class="team-card">

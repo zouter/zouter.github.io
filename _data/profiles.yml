@@ -1,0 +1,40 @@
+# Simple profiles for about.md
+simple:
+  - name: Robin Van Everbroeck
+    image: robinve.png.webp
+    scheme: robinve.png
+  - name: Michien Ver Cruysse
+    image: michielv.png.webp
+    scheme: michielv.png
+  - name: Maxim Van Assel
+    scheme: maximva.png
+  - name: Wouter Saelens
+    image: wouters.jpg
+    scheme: wouters.png
+  - name: Yujin Kim
+    scheme: yujink.png
+  - name: Manas Raiker
+    scheme: manasr.png
+    comment: Joining 2026
+  - name: Amir Ebrahimi
+    scheme: amire.png
+    comment: Joining 2026
+
+# Full profiles for profiles.md (team page)
+full:
+  - align: right
+    content: about/robinve.md
+    scheme: robinve.png
+    image_circular: false
+  - align: right
+    content: about/michielv.md
+    scheme: michielv.png
+    image_circular: false
+  - align: right
+    content: about/maximva.md
+    scheme: maximva.png
+    image_circular: false
+  - align: right
+    content: about/wouters.md
+    scheme: wouters.png
+    image_circular: false

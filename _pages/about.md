@@ -22,32 +22,7 @@ announcements:
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
-profiles:
-  # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/
-  - name: Robin Van Everbroeck
-    image: robinve.png.webp
-    scheme: robinve.png
-  - name: Michien Ver Cruysse
-    image: michielv.png.webp
-    scheme: michielv.png
-  - name: Maxim Van Assel
-    # image: maximva.jpg
-    scheme: maximva.png
-  - name: Wouter Saelens
-    image: wouters.jpg
-    scheme: wouters.png
-  - name: Yujin Kim
-    # image: amire.jpg
-    scheme: yujink.png
-  - name: Manas Raiker
-    # image: manasr.jpg
-    scheme: manasr.png
-    comment: Joining 2026
-  - name: Amir Ebrahimi
-    # image: amire.jpg
-    scheme: amire.png
-    comment: Joining 2026
+profile_source: simple
 ---
 
 My lab uses advanced probabilistic AI models to solve complex immunological puzzles.
