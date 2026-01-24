@@ -4,7 +4,7 @@
     {% for profile in profiles %}
       {% assign photo_source = profile.image | default: 'placeholder.png' %}
       {% assign scheme_source = profile.scheme %}
-      <article class="team-card">
+      <article class="team-card{% if profile.style %} team-card-{{ profile.style }}{% endif %}">
         <div class="team-images">
           {% if photo_source %}
             {% assign profile_image_path = photo_source | prepend: 'assets/img/profiles/photos/' %}

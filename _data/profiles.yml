@@ -4,25 +4,32 @@ simple:
     image: robinve.png.webp
     scheme: robinve.png
     comment: PhD
+    style: cyanorange
   - name: Michien Ver Cruysse
     image: michielv.png.webp
     scheme: michielv.png
     comment: PhD
+    style: purplecyan
   - name: Maxim Van Assel
     scheme: maximva.png
     comment: PhD
+    style: purpleorange
   - name: Wouter Saelens
     image: wouters.jpg
     scheme: wouters.png
+    style: purplecyanorange
   - name: Yujin Kim
     scheme: yujink.png
     comment: Graduate Student
+    style: purplecyan
   - name: Manas Raiker
     scheme: manasr.png
     comment: PhD - Joining 2026
+    style: purpleorange
   - name: Amir Ebrahimi
     scheme: amire.png
     comment: PhD - Joining 2026
+    style: purplecyan
 
 # Full profiles for profiles.md (team page)
 full:

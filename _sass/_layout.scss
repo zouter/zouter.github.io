@@ -42,6 +42,16 @@ body.sticky-bottom-footer {
  * Team grid
  ******************************************************************************/
 
+// Team card gradient colors
+$cyan-1: #11998e;
+$cyan-2: #38ef7d;
+$orange-1: #ff8c00;
+$orange-2: #ffb347;
+$purple-1: #7928ca;
+$purple-2: #ff0080;
+$team-card-gradient-angle: 45deg;
+$team-card-gradient-opacity-hover: 0.1;
+
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -64,8 +74,101 @@ body.sticky-bottom-footer {
 
 .team-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.052);
   border-color: var(--global-hover-color);
+}
+
+.team-card-cyanorange {
+  background: linear-gradient($team-card-gradient-angle, rgba($cyan-1, 0.05), rgba($cyan-2, 0.05), rgba($orange-1, 0.05), rgba($orange-2, 0.05));
+}
+
+.team-card-cyanorange:hover {
+  position: relative;
+  background: linear-gradient($team-card-gradient-angle, rgba($cyan-1, $team-card-gradient-opacity-hover), rgba($cyan-2, $team-card-gradient-opacity-hover), rgba($orange-1, $team-card-gradient-opacity-hover), rgba($orange-2, $team-card-gradient-opacity-hover));
+  border-color: transparent;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: 12px;
+    padding: 1px;
+    background: linear-gradient($team-card-gradient-angle, $cyan-1, $cyan-2, $orange-1, $orange-2);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+}
+
+
+.team-card-purpleorange {
+  background: linear-gradient($team-card-gradient-angle, rgba($purple-1, 0.05), rgba($purple-2, 0.05), rgba($orange-1, 0.05), rgba($orange-2, 0.05));
+}
+
+.team-card-purpleorange:hover {
+  position: relative;
+  background: linear-gradient($team-card-gradient-angle, rgba($purple-1, $team-card-gradient-opacity-hover), rgba($purple-2, $team-card-gradient-opacity-hover), rgba($orange-1, $team-card-gradient-opacity-hover), rgba($orange-2, $team-card-gradient-opacity-hover));
+  border-color: transparent;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: 12px;
+    padding: 1px;
+    background: linear-gradient($team-card-gradient-angle, $purple-1, $purple-2, $orange-1, $orange-2);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+}
+
+.team-card-purplecyan {
+  background: linear-gradient($team-card-gradient-angle, rgba($purple-1, 0.05), rgba($purple-2, 0.05), rgba($cyan-1, 0.05), rgba($cyan-2, 0.05));
+}
+
+.team-card-purplecyan:hover {
+  position: relative;
+  background: linear-gradient($team-card-gradient-angle, rgba($purple-1, $team-card-gradient-opacity-hover), rgba($purple-2, $team-card-gradient-opacity-hover), rgba($cyan-1, $team-card-gradient-opacity-hover), rgba($cyan-2, $team-card-gradient-opacity-hover));
+  border-color: transparent;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: 12px;
+    padding: 1px;
+    background: linear-gradient($team-card-gradient-angle, $purple-1, $purple-2, $cyan-1, $cyan-2);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+}
+
+.team-card-purplecyanorange {
+  background: linear-gradient($team-card-gradient-angle, rgba($purple-1, 0.05), rgba($purple-2, 0.05), rgba($cyan-1, 0.05), rgba($cyan-2, 0.05), rgba($orange-1, 0.05), rgba($orange-2, 0.05));
+}
+
+.team-card-purplecyanorange:hover {
+  position: relative;
+  background: linear-gradient($team-card-gradient-angle, rgba($purple-1, $team-card-gradient-opacity-hover), rgba($purple-2, $team-card-gradient-opacity-hover), rgba($cyan-1, $team-card-gradient-opacity-hover), rgba($cyan-2, $team-card-gradient-opacity-hover), rgba($orange-1, $team-card-gradient-opacity-hover), rgba($orange-2, $team-card-gradient-opacity-hover));
+  border-color: transparent;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: 12px;
+    padding: 1px;
+    background: linear-gradient($team-card-gradient-angle, $purple-1, $purple-2, $cyan-1, $cyan-2, $orange-1, $orange-2);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
 }
 
 .team-images {
