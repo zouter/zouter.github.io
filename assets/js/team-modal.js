@@ -32,13 +32,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     
     modal.classList.add('active');
-    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    // document.body.style.overflow = 'hidden'; // Prevent background scrolling
   }
 
   // Function to close modal
   function closeModal() {
     modal.classList.remove('active');
-    document.body.style.overflow = ''; // Restore scrolling
+    // document.body.style.overflow = ''; // Restore scrolling
   }
 
   // Add click handlers to team cards with content
