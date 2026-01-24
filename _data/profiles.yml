@@ -3,22 +3,26 @@ simple:
   - name: Robin Van Everbroeck
     image: robinve.png.webp
     scheme: robinve.png
+    comment: PhD
   - name: Michien Ver Cruysse
     image: michielv.png.webp
     scheme: michielv.png
+    comment: PhD
   - name: Maxim Van Assel
     scheme: maximva.png
+    comment: PhD
   - name: Wouter Saelens
     image: wouters.jpg
     scheme: wouters.png
   - name: Yujin Kim
     scheme: yujink.png
+    comment: Graduate Student
   - name: Manas Raiker
     scheme: manasr.png
-    comment: Joining 2026
+    comment: PhD - Joining 2026
   - name: Amir Ebrahimi
     scheme: amire.png
-    comment: Joining 2026
+    comment: PhD - Joining 2026
 
 # Full profiles for profiles.md (team page)
 full:
