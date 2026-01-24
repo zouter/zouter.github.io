@@ -1,0 +1,48 @@
+<div class="team-grid">
+  {% if page.profiles %}
+    {% for profile in page.profiles %}
+      {% assign photo_source = profile.image | default: 'placeholder.png' %}
+      {% assign scheme_source = profile.scheme %}
+      <article class="team-card">
+        <div class="team-images">
+          {% if photo_source %}
+            {% assign profile_image_path = photo_source | prepend: 'assets/img/profiles/photos/' %}
+            {% assign profile_image_class = 'img-fluid team-photo' %}
+            {% capture sizes %}(min-width: {{ site.max_width }}) 200px, (min-width: 576px) 200px, 90vw{% endcapture %}
+            <div class="team-image">
+              {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.name %}
+            </div>
+          {% endif %}
+          {% if scheme_source %}
+            {% assign profile_scheme_path = scheme_source | prepend: 'assets/img/profiles/schemes/' %}
+            {% assign profile_scheme_class = 'img-fluid team-photo' %}
+            {% capture sizes %}(min-width: {{ site.max_width }}) 200px, (min-width: 576px) 200px, 90vw{% endcapture %}
+            <div class="team-image">
+              {% include figure.liquid loading="eager" path=profile_scheme_path class=profile_scheme_class sizes=sizes alt=profile.name %}
+            </div>
+          {% endif %}
+        </div>
+
+        {% if profile.name %}
+          <div class="team-name">{{ profile.name }}</div>
+        {% endif %}
+
+        
+        {% if profile.comment %}
+          <div class="team-comment">{{ profile.comment }}</div>
+        {% endif %}
+
+        {% if profile.more_info %}
+          <div class="team-more">{{ profile.more_info }}</div>
+        {% endif %}
+
+        {% if profile.content %}
+          <div class="team-body">
+            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+            {{ profile_content | markdownify }}
+          </div>
+        {% endif %}
+      </article>
+    {% endfor %}
+  {% endif %}
+</div>

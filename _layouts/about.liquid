@@ -20,7 +20,35 @@ layout: default
             cache_bust=true
           %}
         {% endif %}
-        {% if page.logo.image %}
+        {% if page.logo.image_light or page.logo.image_dark %}
+          {% if page.logo.image_circular %}
+            {% assign profile_image_class = 'img-fluid rounded-circle' %}
+          {% else %}
+            {% assign profile_image_class = 'img-fluid rounded' %}
+          {% endif %}
+          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 400px) 30vw, 95vw"{% endcapture %}
+
+          {% if page.logo.image_light %}
+            {% assign logo_light_path = page.logo.image_light | prepend: 'assets/img/' %}
+            <span class="only-light">
+              {%
+                include figure.liquid loading="eager" path=logo_light_path class=profile_image_class sizes=sizes alt=page.logo.image_light
+                cache_bust=true
+              %}
+            </span>
+          {% endif %}
+
+          {% if page.logo.image_dark %}
+            {% assign logo_dark_path = page.logo.image_dark | prepend: 'assets/img/' %}
+            <span class="only-dark">
+              {%
+                include figure.liquid loading="eager" path=logo_dark_path class=profile_image_class sizes=sizes alt=page.logo.image_dark
+                cache_bust=true
+              %}
+            </span>
+          {% endif %}
+
+        {% elsif page.logo.image %}
           {% assign profile_image_path = page.logo.image | prepend: 'assets/img/' %}
           {% if page.logo.image_circular %}
             {% assign profile_image_class = 'img-fluid rounded-circle' %}
@@ -70,6 +98,15 @@ layout: default
         <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest posts</a>
       </h2>
       {% include latest_posts.liquid %}
+    {% endif %}
+
+
+    <!-- Team -->
+    {% if page.profiles %}
+      <h2>
+        <a href="{{ '/profiles/' | relative_url }}" style="color: inherit">Team</a>
+      </h2>
+      {% include team.liquid %}
     {% endif %}
 
     <!-- Selected papers -->
