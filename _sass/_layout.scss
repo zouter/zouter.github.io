@@ -6,6 +6,7 @@ body {
   padding-bottom: 70px;
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
+  scrollbar-gutter: stable; /* Reserve space for scrollbar to prevent layout shift */
 
   h1,
   h2,
