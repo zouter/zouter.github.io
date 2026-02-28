@@ -25,10 +25,10 @@ announcements:
 profile_source: simple
 ---
 
-My lab uses advanced probabilistic AI models to solve complex immunological puzzles.
+The lab uses advanced probabilistic AI models to solve complex immunological puzzles.
 
 We focus on establishing **causal**{: style="color:#EC6524"} links between genes and cell states. We apply key concepts from causal learning to go beyond correlations, and use large-scale perturbational data where possible.
 
-For this we use a **systems**{: style="color:#04A2A7"} perspective. Modern perturbational datasets give unique problems for inference and statistics, meaning we push the frontier of deep probabilistic models and amortization. A true dream for any aspiring machine learner.
+For this we use a **systems**{: style="color:#04A2A7"} perspective. Modern perturbational datasets give unique problems for inference and statistics, meaning we push the frontier of deep probabilistic models and amortization. Models are always validated in the lab; a true dream for any aspiring machine learner.
 
 We apply this on urgent problems in **immunology**{: style="color:#6A3B91"}, such as immune cell homeostasis, inflammation and oncology.

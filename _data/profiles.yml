@@ -26,11 +26,15 @@ simple:
     scheme: yujink.png
     comment: Graduate Student
     style: purplecyan
-  - name: Manas Raiker
+  - name: Manas Raikar
     scheme: manasr.png
-    comment: PhD - Joining 2026
+    comment: PhD - Joining March 2026
     style: purpleorange
   - name: Amir Ebrahimi
     scheme: amire.png
     comment: PhD - Joining 2026
+    style: purplecyan
+  - name: Sybren Deboever
+    scheme: sybrendb.png
+    comment: Lab Tech
     style: purplecyan
