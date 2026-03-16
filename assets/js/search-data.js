@@ -33,8 +33,8 @@ ninja.data = [{
         },{id: "news-we-started-our-lab",
           title: 'We started our lab!',
           description: "",
-          section: "News",},{id: "news-we-will-soon-join-vib-ai-as-a-core-member",
-          title: 'We will soon join VIB.AI as a core member.',
+          section: "News",},{id: "news-we-have-joined-the-vib-ai-as-a-core-member",
+          title: 'We have joined the VIB.AI as a core member.',
           description: "",
           section: "News",},{
         id: 'social-email',
