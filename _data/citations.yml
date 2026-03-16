@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-03-04'
+  last_updated: '2026-03-09'
 papers:
   msYffYEAAAAJ:-f6ydRqryjwC:
     citations: 4
     title: 'SPArrOW: a flexible, interactive and scalable pipeline for spatial transcriptomics analysis'
     year: '2024'
   msYffYEAAAAJ:0EnyYjriUFMC:
-    citations: 837
+    citations: 841
     title: Trajectory-based differential expression analysis for single-cell sequencing data
     year: '2020'
   msYffYEAAAAJ:2osOgNQ5qMEC:
@@ -14,11 +14,11 @@ papers:
     title: Inferring developmental chronologies from single cell RNA
     year: '2015'
   msYffYEAAAAJ:4TOpqqG69KYC:
-    citations: 84
+    citations: 85
     title: Recent advances in trajectory inference from single-cell omics data
     year: '2021'
   msYffYEAAAAJ:5nxA0vEk-isC:
-    citations: 2010
+    citations: 2016
     title: 'NicheNet: modeling intercellular communication by linking ligands to target genes'
     year: '2020'
   msYffYEAAAAJ:7PzlFSSx8tAC:
@@ -30,7 +30,7 @@ papers:
     title: Developing and benchmarking methods for analysing transcriptomics data
     year: '2019'
   msYffYEAAAAJ:HDshCWvjkbEC:
-    citations: 56
+    citations: 57
     title: Spatially restricted and ontogenically distinct hepatic macrophages are required for tissue repair
     year: '2025'
   msYffYEAAAAJ:IWHjjKOFINEC:
@@ -50,7 +50,7 @@ papers:
     title: Live-seq enables temporal transcriptomic recording of single cells
     year: '2022'
   msYffYEAAAAJ:LkGwnXOMwfcC:
-    citations: 210
+    citations: 212
     title: Essential guidelines for computational method benchmarking
     year: '2019'
   msYffYEAAAAJ:M3ejUd6NZC8C:
@@ -62,7 +62,7 @@ papers:
     title: 'funkyheatmap: Visualising data frames with mixed data types'
     year: '2025'
   msYffYEAAAAJ:RHpTSmoSYBkC:
-    citations: 1
+    citations: 3
     title: Innate type 2 lymphocytes trigger an inflammatory switch in alveolar macrophages
     year: '2026'
   msYffYEAAAAJ:Tyk-4Ss8FVUC:
@@ -74,7 +74,7 @@ papers:
     title: 'TinGa: fast and flexible trajectory inference with Growing Neural Gas'
     year: '2020'
   msYffYEAAAAJ:UeHWp8X0CEIC:
-    citations: 1796
+    citations: 1800
     title: A comparison of single-cell trajectory inference methods
     year: '2019'
   msYffYEAAAAJ:UebtZRa9Y70C:
@@ -106,7 +106,7 @@ papers:
     title: A human omentum-specific mesothelial-like stromal population inhibits adipogenesis through IGFBP2 secretion
     year: '2024'
   msYffYEAAAAJ:Zph67rFs4hoC:
-    citations: 1355
+    citations: 1366
     title: A scalable SCENIC workflow for single-cell gene regulatory network analysis
     year: '2020'
   msYffYEAAAAJ:_Qo2XoVZTnwC:
@@ -118,11 +118,11 @@ papers:
     title: Variational Inference compared to Markov Chain Monte Carlo for modelling gene expression
     year: Unknown Year
   msYffYEAAAAJ:aqlVkmm33-oC:
-    citations: 880
+    citations: 885
     title: Spatial proteogenomics reveals distinct and evolutionarily conserved hepatic macrophage niches
     year: '2022'
   msYffYEAAAAJ:eQOLeE2rZwMC:
-    citations: 752
+    citations: 754
     title: Yolk sac macrophages, fetal liver, and adult monocytes can colonize an empty niche and develop into functional tissue-resident macrophages
     year: '2016'
   msYffYEAAAAJ:hC7cP41nSMkC:
@@ -150,7 +150,7 @@ papers:
     title: Capacity of yolk sac macrophages, fetal liver and adult monocytes to colonize an empty niche and develop into functional tissue resident macrophages
     year: '2016'
   msYffYEAAAAJ:qxL8FJ1GzNcC:
-    citations: 799
+    citations: 802
     title: 'Fly Cell Atlas: A single-nucleus transcriptomic atlas of the adult fruit fly'
     year: '2022'
   msYffYEAAAAJ:roLk4NBRz8UC:
