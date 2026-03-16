@@ -27,8 +27,9 @@ simple:
     comment: Graduate Student
     style: purplecyan
   - name: Manas Raikar
+    image: manasr.jpg
     scheme: manasr.png
-    comment: PhD - Joining March 2026
+    comment: PhD - Joining April 2026
     style: purpleorange
   - name: Amir Ebrahimi
     scheme: amire.png

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We will soon join [VIB.AI](https://www.vib.ai) as a core member. 
+We have joined the [VIB.AI](https://www.vib.ai) as a core member. 
