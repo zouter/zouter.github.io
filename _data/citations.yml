@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-03-09'
+  last_updated: '2026-04-01'
 papers:
   msYffYEAAAAJ:-f6ydRqryjwC:
     citations: 4
     title: 'SPArrOW: a flexible, interactive and scalable pipeline for spatial transcriptomics analysis'
     year: '2024'
   msYffYEAAAAJ:0EnyYjriUFMC:
-    citations: 841
+    citations: 864
     title: Trajectory-based differential expression analysis for single-cell sequencing data
     year: '2020'
   msYffYEAAAAJ:2osOgNQ5qMEC:
@@ -14,11 +14,11 @@ papers:
     title: Inferring developmental chronologies from single cell RNA
     year: '2015'
   msYffYEAAAAJ:4TOpqqG69KYC:
-    citations: 85
+    citations: 86
     title: Recent advances in trajectory inference from single-cell omics data
     year: '2021'
   msYffYEAAAAJ:5nxA0vEk-isC:
-    citations: 2016
+    citations: 2066
     title: 'NicheNet: modeling intercellular communication by linking ligands to target genes'
     year: '2020'
   msYffYEAAAAJ:7PzlFSSx8tAC:
@@ -30,15 +30,15 @@ papers:
     title: Developing and benchmarking methods for analysing transcriptomics data
     year: '2019'
   msYffYEAAAAJ:HDshCWvjkbEC:
-    citations: 57
+    citations: 64
     title: Spatially restricted and ontogenically distinct hepatic macrophages are required for tissue repair
     year: '2025'
   msYffYEAAAAJ:IWHjjKOFINEC:
-    citations: 6
+    citations: 7
     title: ChromatinHD connects single-cell DNA accessibility and conformation to gene expression through scale-adaptive machine learning
     year: '2025'
   msYffYEAAAAJ:IjCSPb-OGe4C:
-    citations: 163
+    citations: 165
     title: SCORPIUS improves trajectory inference and identifies novel modules in dendritic cell development
     year: '2016'
   msYffYEAAAAJ:KlAtU1dfN6UC:
@@ -46,15 +46,15 @@ papers:
     title: Deterministic scRNA-seq of individual intestinal organoids reveals new subtypes and coexisting distinct stem cell pools
     year: '2020'
   msYffYEAAAAJ:L8Ckcad2t8MC:
-    citations: 261
+    citations: 263
     title: Live-seq enables temporal transcriptomic recording of single cells
     year: '2022'
   msYffYEAAAAJ:LkGwnXOMwfcC:
-    citations: 212
+    citations: 217
     title: Essential guidelines for computational method benchmarking
     year: '2019'
   msYffYEAAAAJ:M3ejUd6NZC8C:
-    citations: 139
+    citations: 138
     title: Spearheading future omics analyses using dyngen, a multi-modal simulator of single cells
     year: '2021'
   msYffYEAAAAJ:R3hNpaxXUhUC:
@@ -62,7 +62,7 @@ papers:
     title: 'funkyheatmap: Visualising data frames with mixed data types'
     year: '2025'
   msYffYEAAAAJ:RHpTSmoSYBkC:
-    citations: 3
+    citations: 5
     title: Innate type 2 lymphocytes trigger an inflammatory switch in alveolar macrophages
     year: '2026'
   msYffYEAAAAJ:Tyk-4Ss8FVUC:
@@ -74,7 +74,7 @@ papers:
     title: 'TinGa: fast and flexible trajectory inference with Growing Neural Gas'
     year: '2020'
   msYffYEAAAAJ:UeHWp8X0CEIC:
-    citations: 1800
+    citations: 1828
     title: A comparison of single-cell trajectory inference methods
     year: '2019'
   msYffYEAAAAJ:UebtZRa9Y70C:
@@ -86,7 +86,7 @@ papers:
     title: "Computational methods for trajectory inference from single\u2010cell transcriptomics"
     year: '2016'
   msYffYEAAAAJ:WF5omc3nYNoC:
-    citations: 292
+    citations: 296
     title: The transcription factor ZEB2 is required to maintain the tissue-specific identities of macrophages
     year: '2018'
   msYffYEAAAAJ:Wp0gIr-vW9MC:
@@ -102,15 +102,15 @@ papers:
     title: The transcription factor Zeb2 regulates development of conventional and plasmacytoid DCs by repressing Id2
     year: '2016'
   msYffYEAAAAJ:ZeXyd9-uunAC:
-    citations: 18
+    citations: 20
     title: A human omentum-specific mesothelial-like stromal population inhibits adipogenesis through IGFBP2 secretion
     year: '2024'
   msYffYEAAAAJ:Zph67rFs4hoC:
-    citations: 1366
+    citations: 1389
     title: A scalable SCENIC workflow for single-cell gene regulatory network analysis
     year: '2020'
   msYffYEAAAAJ:_Qo2XoVZTnwC:
-    citations: 3
+    citations: 5
     title: Dissecting the impact of transcription factor dose on cell reprogramming heterogeneity using scTF-seq
     year: '2025'
   msYffYEAAAAJ:_kc_bZDykSQC:
@@ -118,11 +118,11 @@ papers:
     title: Variational Inference compared to Markov Chain Monte Carlo for modelling gene expression
     year: Unknown Year
   msYffYEAAAAJ:aqlVkmm33-oC:
-    citations: 885
+    citations: 910
     title: Spatial proteogenomics reveals distinct and evolutionarily conserved hepatic macrophage niches
     year: '2022'
   msYffYEAAAAJ:eQOLeE2rZwMC:
-    citations: 754
+    citations: 761
     title: Yolk sac macrophages, fetal liver, and adult monocytes can colonize an empty niche and develop into functional tissue-resident macrophages
     year: '2016'
   msYffYEAAAAJ:hC7cP41nSMkC:
@@ -134,7 +134,7 @@ papers:
     title: The unfolded protein sensor IRE1a is essential for homeostatic dendritic cell maturation
     year: '2024'
   msYffYEAAAAJ:kNdYIx-mwKoC:
-    citations: 18
+    citations: 19
     title: 'dyngen: a multi-modal simulator for spearheading new single-cell omics analyses'
     year: '2020'
   msYffYEAAAAJ:mVmsd5A6BfQC:
@@ -150,7 +150,7 @@ papers:
     title: Capacity of yolk sac macrophages, fetal liver and adult monocytes to colonize an empty niche and develop into functional tissue resident macrophages
     year: '2016'
   msYffYEAAAAJ:qxL8FJ1GzNcC:
-    citations: 802
+    citations: 813
     title: 'Fly Cell Atlas: A single-nucleus transcriptomic atlas of the adult fruit fly'
     year: '2022'
   msYffYEAAAAJ:roLk4NBRz8UC:
@@ -158,6 +158,6 @@ papers:
     title: Network inference from single-cell transcriptomic data
     year: '2018'
   msYffYEAAAAJ:zYLM7Y9cAGgC:
-    citations: 356
+    citations: 359
     title: A comprehensive evaluation of module detection methods for gene expression data
     year: '2018'
