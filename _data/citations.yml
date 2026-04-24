@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-22'
+  last_updated: '2026-04-24'
 papers:
   msYffYEAAAAJ:-f6ydRqryjwC:
     citations: 4
@@ -14,11 +14,11 @@ papers:
     title: Inferring developmental chronologies from single cell RNA
     year: '2015'
   msYffYEAAAAJ:4TOpqqG69KYC:
-    citations: 87
+    citations: 88
     title: Recent advances in trajectory inference from single-cell omics data
     year: '2021'
   msYffYEAAAAJ:5nxA0vEk-isC:
-    citations: 2105
+    citations: 2110
     title: 'NicheNet: modeling intercellular communication by linking ligands to target genes'
     year: '2020'
   msYffYEAAAAJ:7PzlFSSx8tAC:
@@ -30,7 +30,7 @@ papers:
     title: Developing and benchmarking methods for analysing transcriptomics data
     year: '2019'
   msYffYEAAAAJ:HDshCWvjkbEC:
-    citations: 74
+    citations: 75
     title: Spatially restricted and ontogenically distinct hepatic macrophages are required for tissue repair
     year: '2025'
   msYffYEAAAAJ:IWHjjKOFINEC:
@@ -62,7 +62,7 @@ papers:
     title: 'funkyheatmap: Visualising data frames with mixed data types'
     year: '2025'
   msYffYEAAAAJ:RHpTSmoSYBkC:
-    citations: 5
+    citations: 6
     title: Innate type 2 lymphocytes trigger an inflammatory switch in alveolar macrophages
     year: '2026'
   msYffYEAAAAJ:Tyk-4Ss8FVUC:
@@ -74,7 +74,7 @@ papers:
     title: 'TinGa: fast and flexible trajectory inference with Growing Neural Gas'
     year: '2020'
   msYffYEAAAAJ:UeHWp8X0CEIC:
-    citations: 1854
+    citations: 1856
     title: A comparison of single-cell trajectory inference methods
     year: '2019'
   msYffYEAAAAJ:UebtZRa9Y70C:
@@ -106,7 +106,7 @@ papers:
     title: A human omentum-specific mesothelial-like stromal population inhibits adipogenesis through IGFBP2 secretion
     year: '2024'
   msYffYEAAAAJ:Zph67rFs4hoC:
-    citations: 1414
+    citations: 1415
     title: A scalable SCENIC workflow for single-cell gene regulatory network analysis
     year: '2020'
   msYffYEAAAAJ:_Qo2XoVZTnwC:
@@ -118,7 +118,7 @@ papers:
     title: Variational Inference compared to Markov Chain Monte Carlo for modelling gene expression
     year: Unknown Year
   msYffYEAAAAJ:aqlVkmm33-oC:
-    citations: 930
+    citations: 935
     title: Spatial proteogenomics reveals distinct and evolutionarily conserved hepatic macrophage niches
     year: '2022'
   msYffYEAAAAJ:eQOLeE2rZwMC:
@@ -158,6 +158,6 @@ papers:
     title: Network inference from single-cell transcriptomic data
     year: '2018'
   msYffYEAAAAJ:zYLM7Y9cAGgC:
-    citations: 359
+    citations: 360
     title: A comprehensive evaluation of module detection methods for gene expression data
     year: '2018'
