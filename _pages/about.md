@@ -41,6 +41,4 @@ Join our multidisciplinary team at the intersection of causal biology, AI and im
 - **PhD or postdoctoral researcher** in perturbational systems biology *(dry and wet lab)*
 - **Wet-lab technician** performing and optimizing in vivo CRISPR screens
 
-[View vacancies at VIB Jobs](https://jobs.vib.be/){: .btn .btn-primary }
-
-Job descriptions will be posted soon. Spontaneous applications are welcome: [contact Wouter Saelens](mailto:wouter.saelens@vib.be).
+Job descriptions will be posted soon on [VIB Jobs](https://jobs.vib.be/). Spontaneous applications are welcome: [contact Wouter Saelens](mailto:wouter.saelens@vib.be).
