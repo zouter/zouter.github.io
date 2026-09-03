@@ -1,41 +1,62 @@
 # Simple profiles for about.md
 simple:
+  - name: Wouter Saelens
+    image: wouters.jpg
+    scheme: wouters.png
+    style: purplecyanorange
+    content: about/wouters.md
   - name: Robin Van Everbroeck
     image: robinve.png.webp
     scheme: robinve.png
     comment: PhD
     style: cyanorange
     content: about/robinve.md
-  - name: Michiel Ver Cruysse
-    image: michielv.png.webp
-    scheme: michielv.png
+  - name: Despoina Voulgari
+    image: despoinav.jpg
     comment: PhD
+    more_info: Shared with Scott Lab
     style: purplecyan
-    content: about/michielv.md
   - name: Maxim Van Assel
+    image: maximva.png
     scheme: maximva.png
     comment: PhD
+    more_info: Shared with Lambrecht-Hammad Lab
     style: purpleorange
     content: about/maximva.md
-  - name: Wouter Saelens
-    image: wouters.jpg
-    scheme: wouters.png
-    style: purplecyanorange
-    content: about/wouters.md
-  - name: Yujin Kim
-    scheme: yujink.png
-    comment: Graduate Student
+  - name: Sybren Deboever
+    image: sybrendb.png
+    scheme: sybrendb.png
+    comment: Lab Tech
     style: purplecyan
   - name: Manas Raikar
-    image: manasr.jpg
+    image: manasr-photo.png
     scheme: manasr.png
-    comment: PhD - Joining April 2026
+    comment: PhD
+    more_info: Joined April 2026
+    style: purpleorange
+  - name: Paula Delgado Manzano
+    image: pauladm.jpg
+    comment: PhD
+    more_info: Shared with Scott Lab
+    style: cyanorange
+  - name: Pieter Jan Vanoost
+    image: pieterjanv.jpg
+    comment: PhD
+    more_info: Joined September 2026
     style: purpleorange
   - name: Amir Ebrahimi
     scheme: amire.png
     comment: PhD - Joining 2026
     style: purplecyan
-  - name: Sybren Deboever
-    scheme: sybrendb.png
-    comment: Lab Tech
+  - name: Yujin Kim
+    scheme: yujink.png
+    comment: Graduate Student
+    style: purplecyan
+  - name: Dries Huybens
+    comment: Graduate Student
+    style: cyanorange
+  - name: Céline Debou
+    image: celined.jpeg
+    comment: Visiting Scientist
+    more_info: 3-month visit from July 2026
     style: purplecyan

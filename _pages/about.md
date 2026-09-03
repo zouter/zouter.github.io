@@ -25,7 +25,7 @@ announcements:
 profile_source: simple
 ---
 
-The lab uses advanced probabilistic AI models to solve complex immunological puzzles.
+Our team is one part of the **Causal Systems Biology Lab**, co-headed by Wouter Saelens and [Martin Guilliams](https://guilliamslab.sites.vib.be/en). We use advanced probabilistic AI models to solve complex immunological puzzles.
 
 We focus on establishing **causal**{: style="color:#EC6524"} links between genes and cell states. We apply key concepts from causal learning to go beyond correlations, and use large-scale perturbational data where possible.
 

@@ -3,7 +3,7 @@
   {% if profiles %}
     {% for profile in profiles %}
       {% assign photo_source = profile.image | default: 'placeholder.png' %}
-      {% assign scheme_source = profile.scheme %}
+      {% assign scheme_source = profile.scheme | default: 'placeholder.png' %}
       {% if profile.content %}
         {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
         {% assign profile_content_html = profile_content | markdownify %}
