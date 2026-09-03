@@ -32,3 +32,15 @@ We focus on establishing **causal**{: style="color:#EC6524"} links between genes
 For this we use a **systems**{: style="color:#04A2A7"} perspective. Modern perturbational datasets give unique problems for inference and statistics, meaning we push the frontier of deep probabilistic models and amortization. Models are always validated in the lab; a true dream for any aspiring machine learner.
 
 We apply this on urgent problems in **immunology**{: style="color:#6A3B91"}, such as immune cell homeostasis, inflammation and oncology.
+
+## We're hiring
+
+Join our multidisciplinary team at the intersection of causal biology, AI and immunology. We have openings for:
+
+- **PhD or postdoctoral researcher** in agentic computational biology *(dry lab)*
+- **PhD or postdoctoral researcher** in perturbational systems biology *(dry and wet lab)*
+- **Wet-lab technician** performing and optimizing in vivo CRISPR screens
+
+[View vacancies at VIB Jobs](https://jobs.vib.be/){: .btn .btn-primary }
+
+Job descriptions will be posted soon. Spontaneous applications are welcome: [contact Wouter Saelens](mailto:wouter.saelens@vib.be).
